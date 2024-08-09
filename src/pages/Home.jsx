@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <motion.div>
       <div
-        className=" flex p-12 pt-20 flex-col items-center justify-center h-screen"
+        className=" flex p-12 pt-20 flex-col items-center justify-center h-100vw md:h-screen"
         data-theme="light"
       >
         <main className=" w-[80%] md:w-[30%]">

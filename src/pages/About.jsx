@@ -13,7 +13,7 @@ const About = () => {
     >
       <main className="p-10  text-lg font-mono w-[80%] md:w-[50%]">
         <Logo />
-        <div className="flex flex-col gap-5 text-slate-700">
+        <div className="flex flex-col gap-5 text-slate-700 text-xs md:text-lg">
           {" "}
           <h1 className="font-bold">About me</h1>
           <p>
