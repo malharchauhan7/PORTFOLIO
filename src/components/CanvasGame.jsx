@@ -145,7 +145,7 @@ const CanvasGame = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
-    canvas.width = window.innerWidth;
+    canvas.width = window.innerWidth * 0.8; // 80% of the viewport width
     canvas.height = window.innerHeight;
     context.font = "bold 40px 'Roboto', sans-serif";
     context.textAlign = "center";

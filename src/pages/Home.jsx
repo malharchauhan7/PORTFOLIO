@@ -24,7 +24,7 @@ const Home = () => {
                 Malhar Chauhan
               </h1>
               <h3 className="font-mono text-base ">Developer & Designer</h3>
-              <a href="">
+              <a href="https://drive.google.com/file/d/1sp9jT6OxPN1Cs6mMbp44Z2QwHB9nTTVx/view?usp=sharing">
                 <button className="btn btn-xs btn-primary btn-outline mt-2">
                   Resume
                 </button>
