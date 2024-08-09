@@ -49,12 +49,12 @@ const Home = () => {
               >
                 Blogs
               </h1>
-              {/* <h1
-              onClick={() => navigation("/games")}
-              className="hover:underline hover:cursor-pointer decoration-red-400"
-            >
-              Fun
-            </h1> */}
+              <h1
+                onClick={() => navigation("/games")}
+                className="hover:underline hover:cursor-pointer decoration-red-400"
+              >
+                Fun
+              </h1>
             </div>
           </div>
           <div>
