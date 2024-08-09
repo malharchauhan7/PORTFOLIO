@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { useRef, useEffect } from "react";
 
 const CanvasGame = () => {
@@ -114,7 +115,7 @@ const CanvasGame = () => {
             boxes[current].width += difference;
             boxes[current].x = boxes[current - 1].x;
           }
-          xSpeed = xSpeed > 0 ? xSpeed + 1 : xSpeed - 1;
+          xSpeed = xSpeed > 0 ? xSpeed + 0.8 : xSpeed - 0.8;
           current++;
           scrollCounter = height;
           newBox();
@@ -166,7 +167,11 @@ const CanvasGame = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} />;
+  return (
+    <motion.div>
+      <canvas ref={canvasRef} />
+    </motion.div>
+  );
 };
 
 export default CanvasGame;
