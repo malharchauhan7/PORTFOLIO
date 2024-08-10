@@ -1,8 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Logo from "../components/Logo";
+import { Reorder } from "framer-motion";
+const List = [
+  {
+    link: "mailto:malharchauhan02@gmail.com",
+    title: "Email",
+  },
+  {
+    link:
+      "https://www.linkedin.com/in/malhar-chauhan-539100238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    title: "LinkedIn",
+  },
+  {
+    link: "https://github.com/malharchauhan7",
+    title: "GitHub",
+  },
+  {
+    link: "https://x.com/Malhar_7?t=AOSeo52_MVYwdtSzNqfl2A&s=09",
+    title: "Twitter",
+  },
+  {
+    link: "https://dribbins.etsy.com/",
+    title: "Etsy",
+  },
+];
+
+const SocialsItems = ({ List }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0.8 }}
+      whileHover={{
+        scale: 1.2,
+        transition: { duration: 0.3 },
+      }}
+      whileTap={{ scale: 0.9 }}
+      whileInView={{ opacity: 1 }}
+    >
+      <a href={List.link} target="_blank" className="font-mono font-base">
+        {List.title}
+      </a>
+    </motion.div>
+  );
+};
 
 const Connect = () => {
+  const [items, setItems] = useState(List);
+
   return (
     <motion.div
       className="h-screen flex flex-col items-center justify-center"
@@ -10,41 +54,10 @@ const Connect = () => {
     >
       <div className="">
         <Logo />
-        <div className=" transition-all ease-in-out flex flex-col gap-4 my-8 opacity-95">
-          <a
-            href="mailto:malharchauhan02@gmail.com"
-            className="font-mono text-lg hover:underline decoration-slate-400 "
-          >
-            Email
-          </a>
-          <a
-            href="https://www.linkedin.com/in/malhar-chauhan-539100238?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            target="_blank"
-            className="font-mono text-lg hover:underline decoration-slate-400  "
-          >
-            Linkedin
-          </a>
-          <a
-            href="https://github.com/malharchauhan7"
-            target="_blank"
-            className="font-mono text-lg hover:underline decoration-slate-400 "
-          >
-            GitHub
-          </a>
-          <a
-            href="https://x.com/Malhar_7?t=AOSeo52_MVYwdtSzNqfl2A&s=09"
-            target="_blank"
-            className="font-mono text-lg hover:underline decoration-slate-400  "
-          >
-            Twitter
-          </a>
-          <a
-            href="https://dribbins.etsy.com/"
-            target="_blank"
-            className="font-mono text-lg hover:underline decoration-slate-400  "
-          >
-            Etsy
-          </a>
+        <div className=" flex flex-col gap-4 my-8 opacity-95">
+          {items.map((item) => (
+            <SocialsItems List={item} key={item.title} />
+          ))}
         </div>
       </div>
     </motion.div>

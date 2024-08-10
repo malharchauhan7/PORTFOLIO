@@ -32,27 +32,22 @@ const CanvasGame = () => {
       // Clear the canvas
       context.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Draw the background gradient
-      const bgGradient = context.createLinearGradient(
-        0,
-        0,
-        canvas.width,
-        canvas.height
-      );
-      bgGradient.addColorStop(0, "#4c669f");
-      bgGradient.addColorStop(1, "#3b5998");
+      // Draw the dark background
+      const bgGradient = context.createLinearGradient(0, 0, 0, canvas.height);
+      // bgGradient.addColorStop(0, "#0d1117");
+      // bgGradient.addColorStop(1, "#161b22");
       context.fillStyle = bgGradient;
       context.fillRect(0, 0, canvas.width, canvas.height);
 
-      // Draw the score
-      context.fillStyle = "rgba(255, 255, 255, 0.9)";
+      // Draw the score with a modern, clean look
+      context.fillStyle = "#ffffff";
       context.fillText(
         "Score: " + (current - 1).toString(),
         canvas.width / 2,
         150
       );
 
-      // Draw the boxes with gradients and shadows
+      // Draw the boxes with modern gradients and shadows
       for (let n = 0; n < boxes.length; n++) {
         let box = boxes[n];
         const boxGradient = context.createLinearGradient(
@@ -61,8 +56,8 @@ const CanvasGame = () => {
           box.width,
           height
         );
-        boxGradient.addColorStop(0, `rgb(${n * 16}, ${n * 64}, ${n * 128})`);
-        boxGradient.addColorStop(1, `rgb(${n * 32}, ${n * 128}, ${n * 255})`);
+        boxGradient.addColorStop(0, `rgba(255, 255, 255, 0.8)`);
+        boxGradient.addColorStop(1, `rgba(192, 192, 192, 0.8)`);
 
         context.fillStyle = boxGradient;
         context.shadowColor = "rgba(0, 0, 0, 0.5)";
@@ -75,9 +70,9 @@ const CanvasGame = () => {
         );
       }
 
-      // Draw the debris
-      context.fillStyle = "rgba(255, 0, 0, 0.8)";
-      context.shadowColor = "rgba(255, 0, 0, 0.8)";
+      // Draw the debris with a fun, vibrant color
+      context.fillStyle = "rgba(255, 69, 0, 0.8)";
+      context.shadowColor = "rgba(255, 69, 0, 0.8)";
       context.shadowBlur = 10;
       context.fillRect(
         debris.x,

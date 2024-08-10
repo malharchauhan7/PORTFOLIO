@@ -2,7 +2,7 @@ import React from "react";
 import CanvasGame from "../components/CanvasGame";
 const Games = () => {
   return (
-    <div className="bg-[#415E9A] h-screen flex items-center justify-center">
+    <div className="bg-[#12161D] h-screen flex items-center justify-center">
       <CanvasGame />
     </div>
   );

@@ -8,12 +8,12 @@ const About = () => {
 
   return (
     <motion.div
-      className="h-screen flex flex-col items-center justify-center"
+      className="h-screen flex  items-center justify-center"
       data-theme="light"
     >
-      <main className="p-10  text-lg font-mono w-[80%] md:w-[50%]">
+      <main className="p-10  text-lg font-mono w-[80%] md:w-[50%] sm:w-[70%]">
         <Logo />
-        <div className="flex flex-col gap-5 text-slate-700 text-xs md:text-lg">
+        <div className="flex flex-col gap-5  text-slate-700 text-xs md:text-lg ">
           {" "}
           <h1 className="font-bold">About me</h1>
           <p>
@@ -28,11 +28,17 @@ const About = () => {
           </p>
           <p>Welcome to my portfolio!🚀</p>
         </div>
-        <div className="mt-4 ">
+        <motion.div
+          className="mt-4"
+          initial={{ opacity: 0.8 }}
+          whileHover={{ opacity: 1 }}
+        >
           <h1 className="font-thin" onClick={() => navigation("/connect")}>
-            <button className="btn btn-sm btn-primary">Connect</button>
+            <button className="btn btn-xs btn-primary md:btn-sm sm:btn-sm">
+              Connect
+            </button>
           </h1>
-        </div>
+        </motion.div>
       </main>
     </motion.div>
   );

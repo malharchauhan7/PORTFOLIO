@@ -4,7 +4,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Accordination = ({ data }) => {
   return (
-    <motion.div>
+    <motion.div whileHover={{ scale: 1.04 }}>
       <div className="my-1 ">
         <div className="collapse join-item border-base-200 border ">
           <input type="radio" name="my-accordion-4" />
