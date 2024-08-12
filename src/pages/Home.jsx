@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import Logo from "../components/Logo";
 import Card from "../components/Card";
 import data from "../data";
-
 import Accordination from "../components/Accordination";
 //<a class="btn line-btn-dark btn-icon btn-radius" href="1.pdf" title="" download>
 const Home = () => {
@@ -83,10 +82,10 @@ const Home = () => {
               <motion.h1
                 initial={{ opacity: 0.8 }}
                 whileHover={{ scale: 1.03, opacity: 1 }}
-                onClick={() => navigation("/blogs")}
+                onClick={() => navigation("/articles")}
                 className="hover:underline hover:cursor-pointer decoration-lime-600"
               >
-                Blogs
+                Articles
               </motion.h1>
               <motion.h1
                 initial={{ opacity: 0.8 }}
@@ -94,7 +93,7 @@ const Home = () => {
                 onClick={() => navigation("/games")}
                 className="hover:underline hover:cursor-pointer decoration-red-400"
               >
-                Fun
+                Games
               </motion.h1>
             </div>
           </div>
