@@ -20,7 +20,7 @@ const Home = () => {
       // transition={{ duration: 1 }}
     >
       <div
-        className=" flex p-12 pt-20 flex-col items-center justify-center h-100vw md:h-screen"
+        className=" flex  pt-20 flex-col items-center justify-center h-100vw md:h-screen"
         data-theme="light"
       >
         <main className=" w-[80%] md:w-[30%]">
@@ -67,7 +67,8 @@ const Home = () => {
                 initial={{ opacity: 0.8 }}
                 whileHover={{ scale: 1.03, opacity: 1 }}
                 onClick={() => navigation("/about")}
-                className="hover:underline hover:cursor-pointer  decoration-indigo-500"
+                // className="hover:underline hover:cursor-pointer  decoration-indigo-500"
+                className=" hover:cursor-pointer"
               >
                 About
               </motion.h1>
@@ -75,7 +76,8 @@ const Home = () => {
                 initial={{ opacity: 0.8 }}
                 whileHover={{ scale: 1.03, opacity: 1 }}
                 onClick={() => navigation("/connect")}
-                className="hover:underline hover:cursor-pointer decoration-amber-400"
+                // className="hover:underline hover:cursor-pointer decoration-amber-400"
+                className=" hover:cursor-pointer"
               >
                 Connect
               </motion.h1>
@@ -83,7 +85,8 @@ const Home = () => {
                 initial={{ opacity: 0.8 }}
                 whileHover={{ scale: 1.03, opacity: 1 }}
                 onClick={() => navigation("/articles")}
-                className="hover:underline hover:cursor-pointer decoration-lime-600"
+                // className="hover:underline hover:cursor-pointer decoration-lime-600"
+                className=" hover:cursor-pointer"
               >
                 Articles
               </motion.h1>
@@ -91,13 +94,14 @@ const Home = () => {
                 initial={{ opacity: 0.8 }}
                 whileHover={{ scale: 1.03, opacity: 1 }}
                 onClick={() => navigation("/games")}
-                className="hover:underline hover:cursor-pointer decoration-red-400"
+                // className="hover:underline hover:cursor-pointer decoration-red-400"
+                className=" hover:cursor-pointer"
               >
                 Games
               </motion.h1>
             </div>
           </div>
-          <div>
+          <div className="w-full">
             {data.map((item, index) => (
               // <Card data={item} key={index} />
               <Accordination data={item} key={index} />
