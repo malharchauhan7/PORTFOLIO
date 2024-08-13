@@ -36,7 +36,7 @@ const Home = () => {
               >
                 Malhar Chauhan
               </motion.h1> */}
-              <motion.div className="text font-mono font-semibold">
+              <motion.div className="text font-mono font-bold">
                 {text.split("").map((letter, index) => (
                   <motion.span
                     key={index}
