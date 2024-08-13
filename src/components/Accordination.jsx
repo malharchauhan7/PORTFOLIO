@@ -6,10 +6,10 @@ const Accordination = ({ data }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.04 }}
-      className="hover:bg-gray-50 rounded-2xl"
+      className="hover:bg-gray-50 rounded-xl"
     >
       <div className="my-1 ">
-        <div className="collapse join-item border-base-200 border rounded-lg">
+        <div className="collapse join-item border-base-200 border rounded-xl">
           <input type="radio" name="my-accordion-4" />
           <div className="collapse-title text-lg font-semibold">
             {data.title}
@@ -22,7 +22,7 @@ const Accordination = ({ data }) => {
               <a
                 href={data.link}
                 target="_blank"
-                className="transition-all ease-linear ml-auto text-gray-600 hover:text-gray-900 transition-colors"
+                className="transition-all ease-linear ml-auto text-gray-600 hover:text-gray-900 "
               >
                 {data.link === null ? null : <FaExternalLinkAlt size={15} />}
               </a>
