@@ -24,6 +24,10 @@ const List = [
     link: "https://dribbins.etsy.com/",
     title: "Etsy",
   },
+  {
+    link: "https://monkeytype.com/profile/Malhar7",
+    title: "MonkeyType",
+  },
 ];
 
 const SocialsItems = ({ List }) => {
