@@ -30,7 +30,7 @@ const ContentData = ({ data }) => {
       {/* Image */}
       <div className="rounded-md overflow-hidden my-4">
         <img
-          src={data.image}
+          src={data.image.src}
           alt={data.title}
           className="w-auto h-auto object-cover"
         />
