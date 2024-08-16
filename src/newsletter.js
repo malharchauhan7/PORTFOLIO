@@ -4,7 +4,7 @@ const newsdata = [
     date: "16.08.24",
     title: "Neumorphism in Google Drive UI Design",
     subtitle: "Exploring the Modern Fusion of Flat Design and Skeuomorphism.",
-    image: "src/images/newsletter/driveredesign.png",
+    image: "src/images/newsletter/1.jpg",
     link:
       "https://www.figma.com/community/file/1406357600679855634/google-drive-neumorphism",
     content: {
