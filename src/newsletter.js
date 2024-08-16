@@ -5,7 +5,7 @@ const newsdata = [
     title: "Neumorphism in Google Drive UI Design",
     subtitle: "Exploring the Modern Fusion of Flat Design and Skeuomorphism.",
     image: {
-      src: "src/images/1.webp",
+      src: "src/images/driveredesign.png",
       // link:
       //   "https://drive.google.com/file/d/12gA0sMlckRO6NtLoZp6IZquwrOGbLDJI/view?usp=sharing",
     },
