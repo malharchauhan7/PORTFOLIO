@@ -78,7 +78,7 @@ const ContentData = ({ data }) => {
             </div>
           </div>
           <div>
-            <div className="text-base md:text-xl text-gray-700 my-1">
+            <div className="text-base md:text-xl text-gray-700 my-1 font-semibold">
               {data.content.conclusion.h1}
             </div>
             <div className="text-base md:text-xl text-gray-700 my-1">
