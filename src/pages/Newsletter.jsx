@@ -13,7 +13,10 @@ const Newsletter = () => {
   };
 
   return (
-    <motion.div className="flex flex-col md:flex-row items-start p-4 md:p-12 gap-4 md:gap-8">
+    <motion.div
+      className="flex flex-col md:flex-row items-start p-4 md:p-12 gap-4 md:gap-8 h-full bg-white"
+      data-theme="light"
+    >
       <div className="w-full md:w-1/3 h-auto flex flex-col items-start pt-4 md:pt-10 px-4 md:px-5">
         <Logo />
         <h1 className="font-semibold text-lg md:text-xl my-2">All Articles</h1>

@@ -21,8 +21,16 @@ const List = [
     title: "Twitter",
   },
   {
+    link: "https://mrpurrfect.gumroad.com/",
+    title: "GumRoad",
+  },
+  {
     link: "https://dribbins.etsy.com/",
     title: "Etsy",
+  },
+  {
+    link: "https://www.behance.net/malharchauhan1",
+    title: "Behance",
   },
   {
     link: "https://monkeytype.com/profile/Malhar7",
@@ -41,7 +49,7 @@ const SocialsItems = ({ List }) => {
       whileTap={{ scale: 0.9 }}
       whileInView={{ opacity: 1 }}
     >
-      <a href={List.link} target="_blank" className="font-mono font-base">
+      <a href={List.link} target="_blank" className="font-mono text-lg">
         {List.title}
       </a>
     </motion.div>
