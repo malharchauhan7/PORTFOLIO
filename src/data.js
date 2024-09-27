@@ -16,6 +16,14 @@ const data = [
       "Accomplished the Virtual Community Support Project successfully and Developed skills in .NET, PostgreSQL, and Angular Framework.",
   },
   {
+    title: "Algorithm-Visualizer",
+    year: "2024",
+    Tech: "Python matplotlib",
+    link: "https://github.com/malharchauhan7/Algo_Visualizer",
+    content:
+      "Accomplished the Virtual Community Support Project successfully and Developed skills in .NET, PostgreSQL, and Angular Framework.",
+  },
+  {
     title: "DRIBBINS",
     year: "2023-present",
     Tech: "Product & Graphics Design",
