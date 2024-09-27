@@ -21,7 +21,7 @@ const data = [
     Tech: "Python matplotlib",
     link: "https://github.com/malharchauhan7/Algo_Visualizer",
     content:
-      "Accomplished the Virtual Community Support Project successfully and Developed skills in .NET, PostgreSQL, and Angular Framework.",
+      "An algorithm visualizer is a tool or program that visually demonstrates how an algorithm works, These visualizations are often used to explain and teach complex algorithms.",
   },
   {
     title: "DRIBBINS",
