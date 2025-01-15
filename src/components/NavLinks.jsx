@@ -39,6 +39,15 @@ const NavLinks = () => {
         <motion.h1
           initial={{ opacity: 0.8 }}
           whileHover={{ scale: 1.03, opacity: 1 }}
+          onClick={() => navigation("/Designs")}
+          // className="hover:underline hover:cursor-pointer decoration-lime-600"
+          className=" hover:cursor-pointer "
+        >
+          DesignFolio
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0.8 }}
+          whileHover={{ scale: 1.03, opacity: 1 }}
           onClick={() => navigation("/games")}
           // className="hover:underline hover:cursor-pointer decoration-red-400"
           className=" hover:cursor-pointer"

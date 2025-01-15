@@ -6,6 +6,7 @@ import Games from "./pages/Games";
 import Connect from "./pages/Connect";
 // import Blogs from "./pages/Blogs";
 import Newsletter from "./pages/Newsletter";
+import Designs from "./pages/Designs";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           {/* <Route path="/blogs" element={<Blogs />}></Route> */}
           <Route path="/games" element={<Games />}></Route>
           <Route path="/articles" element={<Newsletter />}></Route>
+          <Route path="/Designs" element={<Designs />}></Route>
         </Routes>
       </BrowserRouter>
     </>

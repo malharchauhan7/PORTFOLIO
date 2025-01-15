@@ -1,5 +1,19 @@
 const data = [
   {
+    title: "react-scroll-to-next",
+    year: "2025",
+    Tech: "Nodejs NPM Rollup TypeScript",
+    link: "https://www.npmjs.com/package/react-scroll-to-next",
+    content: `A React component that enables smooth scrolling between sections of a webpage. `,
+  },
+  {
+    title: "Scroll-totop-button",
+    year: "2025",
+    Tech: "Nodejs NPM Rollup TypeScript",
+    link: "https://www.npmjs.com/package/scroll-totop-button",
+    content: `A customizable and lightweight React component to add a "Scroll to Top" button in your React applications.`,
+  },
+  {
     title: "File Converter",
     year: "2024",
     Tech: "React TailwinCSS DaisyUI",
