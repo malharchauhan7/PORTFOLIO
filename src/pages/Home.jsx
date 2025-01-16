@@ -19,10 +19,7 @@ const Home = () => {
       // }}
       // transition={{ duration: 1 }}
     >
-      <div
-        className=" flex pt-20 flex-col items-center justify-center h-100vw md:h-screen "
-        data-theme="light"
-      >
+      <div className=" flex pt-20 flex-col items-center justify-center h-100vw md:h-screen ">
         <main className=" w-[80%] md:w-[30%]">
           <div>
             {" "}

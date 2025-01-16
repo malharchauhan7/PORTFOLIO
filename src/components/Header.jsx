@@ -34,7 +34,6 @@ const Header = () => {
               </motion.span>
             ))}
           </motion.div>
-
           <h3 className="font-mono text-base ">
             Developer & <motion.span>Designer</motion.span>
           </h3>

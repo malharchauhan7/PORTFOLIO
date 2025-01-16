@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { easeIn, motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-
+import ThemeController from "./ThemeController";
 const NavLinks = () => {
   const navigation = useNavigate();
 
@@ -11,7 +11,7 @@ const NavLinks = () => {
       <div className="w-auto h-10  flex items-center justify-center gap-5  font-semibold ">
         <motion.h1
           initial={{ opacity: 0.8 }}
-          whileHover={{ scale: 1.03, opacity: 1 }}
+          whileHover={{ scale: 1.02, opacity: 1 }}
           onClick={() => navigation("/about")}
           // className="hover:underline hover:cursor-pointer  decoration-indigo-500"
           className=" hover:cursor-pointer"
@@ -45,7 +45,6 @@ const NavLinks = () => {
         >
           Articles
         </motion.h1>
-
         <motion.h1
           initial={{ opacity: 0.8 }}
           whileHover={{ scale: 1.03, opacity: 1 }}
@@ -54,6 +53,12 @@ const NavLinks = () => {
           className=" hover:cursor-pointer"
         >
           Games
+        </motion.h1>
+        <motion.h1
+          initial={{ opacity: 0.8 }}
+          whileHover={{ scale: 1.03, opacity: 1 }}
+        >
+          <ThemeController />
         </motion.h1>
       </div>
     </div>
