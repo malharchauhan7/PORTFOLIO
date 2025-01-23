@@ -49,7 +49,7 @@ const ThemeController = () => {
 
   return (
     <div className="">
-      <button className="" onClick={toggleTheme}>
+      <button className="text-sm md:text-base " onClick={toggleTheme}>
         THEME
       </button>
     </div>

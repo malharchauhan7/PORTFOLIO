@@ -15,6 +15,7 @@ const Logo = () => {
       }}
       whileTap={{ scale: 1 }}
       whileInView={{ opacity: 1 }}
+      className="hoverable"
     >
       <div className=" hover:cursor-pointer" onClick={() => navigation("/")}>
         <img src={Image} alt="" className="w-11 my-4" />
