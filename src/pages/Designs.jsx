@@ -29,11 +29,15 @@ const Designs = () => {
               <h1 className="md:text-2xl sm:text-xl font-semibold text-center mb-2">
                 Google Drive UI Redesign with Neumorphism
               </h1>
-              <img
-                src="https://i.ibb.co/yBbDNRr/driveredesign.png"
-                className="w-full object-cover rounded-lg hover:cursor-pointer"
-                onClick={() => navigation("/articles")}
-              />
+              <a
+                href="https://googledrive-neumorphism.vercel.app/"
+                target="_blank"
+              >
+                <img
+                  src="https://i.ibb.co/yBbDNRr/driveredesign.png"
+                  className="w-full object-cover rounded-lg hover:cursor-pointer"
+                />
+              </a>
               {/* <p className="font-sans text-sm sm:text-base text-justify ">
                 <span
                   className="m-2 font-bold text-slate-600 hover:text-slate-500 hover:cursor-pointer"
