@@ -2,95 +2,113 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Logo from "../components/Logo";
-import { useNavigate } from "react-router-dom";
 import { FaExternalLinkAlt } from "react-icons/fa";
-
+import { useState, useEffect } from "react";
+import ThemeController from "../components/ThemeController";
 const Designs = () => {
-  const navigation = useNavigate();
-
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
   return (
     <motion.div>
-      <div
-        className="flex pt-20 flex-col items-center justify-center h-100vw md:h-auto "
-        data-theme="light"
-      >
+      {/* Overlay Loading Screen */}
+      {loading && (
+        <motion.div
+          className="fixed top-0 left-0 w-full h-full bg-white z-50 flex items-center justify-center select-none"
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 0 }}
+          transition={{ duration: 1.5 }}
+        ></motion.div>
+      )}
+      <div className="flex flex-col items-center justify-center min-h-screen px-4 py-10">
+        {/* Logo and Header */}
         <Logo />
-        <div className="font-semibold text-2xl ">
+        <div className="font-bold text-2xl  my-4 flex gap-2">
           <h1>DesignFolio</h1>
+          <ThemeController />
         </div>
-        {/* Contents */}
-        <div>
-          {/* main div */}
+
+        {/* Content Section */}
+        <div className="space-y-10 w-[88%] lg:w-[25%] md:w-[50%] sm:w-[50%] mx-auto">
+          {/* Block 1: Google Drive Redesign */}
           <div>
-            {/* content blocks */}
+            <h2 className="text-lg font-medium  mb-3 text-center">
+              Google Drive UI Redesign with Neumorphism
+            </h2>
+            <a
+              href="https://googledrive-neumorphism.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <motion.img
+                src="https://i.ibb.co/yBbDNRr/driveredesign.png"
+                alt="Google Drive UI Redesign"
+                className="w-full rounded-lg shadow-lg "
+                whileHover={{ scale: 0.98 }}
+              />
+            </a>
+          </div>
 
-            {/* block-1 */}
-            <div className="rounded-xl overflow-hidden my-4 w-full max-w-[600px] flex flex-col gap-2 mx-auto p-4 sm:p-6">
-              <h1 className="md:text-2xl sm:text-xl font-semibold text-center mb-2">
-                Google Drive UI Redesign with Neumorphism
-              </h1>
-              <a
-                href="https://googledrive-neumorphism.vercel.app/"
-                target="_blank"
-              >
-                <img
-                  src="https://i.ibb.co/yBbDNRr/driveredesign.png"
-                  className="w-full object-cover rounded-lg hover:cursor-pointer"
-                />
-              </a>
-            </div>
-            {/* block-2 */}
-            <div className="rounded-xl overflow-hidden my-4 w-full max-w-[600px] flex flex-col gap-3 mx-auto p-4 sm:p-6">
-              <h1 className="md:text-2xl sm:text-xl font-semibold text-center mb-2">
-                Instagram Carousel Designs
-              </h1>
-              <img
+          {/* Block 2: Instagram Carousel Designs */}
+          <div>
+            <h2 className="text-lg font-medium  mb-3 text-center">
+              Instagram Carousel Designs
+            </h2>
+            <div className="grid grid-cols-1 gap-4">
+              <motion.img
                 src="https://i.ibb.co/hFcjq64/Frame-1.png"
-                alt=""
-                className="w-full object-cover rounded-lg"
+                alt="Instagram Carousel 1"
+                className="w-full rounded-lg transition-transform duration-200 shadow-lg"
               />
-              <img
+              <motion.img
                 src="https://i.ibb.co/H4wyGyd/3.png"
-                alt=""
-                className="w-full object-cover rounded-lg"
+                alt="Instagram Carousel 2"
+                className="w-full rounded-lg transition-transform duration-200 shadow-lg"
               />
-
-              <img
+              <motion.img
                 src="https://i.ibb.co/6sQpYFZ/2.png"
-                alt=""
-                className="w-full object-cover rounded-lg"
+                alt="Instagram Carousel 3"
+                className="w-full rounded-lg transition-transform duration-200 shadow-lg"
               />
-              <img
+              <motion.img
                 src="https://i.ibb.co/NmnvnYP/1.png"
-                alt=""
-                className="w-full object-cover rounded-lg"
+                alt="Instagram Carousel 4"
+                className="w-full rounded-lg transition-transform duration-200 shadow-lg"
               />
             </div>
-            {/* block-3  */}
-            <div className="rounded-xl overflow-hidden my-4 w-full max-w-[600px] flex flex-col gap-3 mx-auto p-4 sm:p-6">
-              <h1 className="md:text-2xl sm:text-xl font-semibold text-center mb-2">
-                Logo & Product Designs
-              </h1>
-              <img
+          </div>
+
+          {/* Block 3: Logo & Product Designs */}
+          <div>
+            <h2 className="text-lg font-medium mb-3 text-center">
+              Logo & Product Designs
+            </h2>
+            <div className="space-y-4">
+              <motion.img
                 src="https://i.ibb.co/dQKZkX8/anveshan-logo-design.png"
-                alt=""
-                className="w-full object-cover rounded-lg"
+                alt="Logo Design"
+                className="w-full rounded-lg transition-transform duration-200 shadow-lg"
               />
-              <img
+              <motion.img
                 src="https://i.ibb.co/KKB0rn7/PRODUCT-3-VIDEO.png"
-                alt=""
-                className="w-full object-cover rounded-lg"
+                alt="Product Design"
+                className="w-full rounded-lg transition-transform duration-200 shadow-lg"
               />
-              <div className="md:text-lg sm:text-lg font-semibold text-left mb-2 flex">
-                More Product designs on
-                <a
-                  href="https://www.etsy.com/shop/dribbins/?etsrc=sdt"
-                  className="text-bold hover:text-slate-600 cursor-pointer mx-2"
-                  target="_blank"
-                >
-                  ETSY{" "}
-                </a>
-              </div>
+            </div>
+            <div className="mt-3 text-sm text-center ">
+              Explore more designs on{" "}
+              <motion.a
+                href="https://www.etsy.com/shop/dribbins/?etsrc=sdt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 font-bold hover:text-blue-700 transition-transform duration-200"
+              >
+                ETSY <FaExternalLinkAlt className="inline-block ml-1 mb-1" />
+              </motion.a>
             </div>
           </div>
         </div>

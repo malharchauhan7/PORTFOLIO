@@ -28,7 +28,7 @@ const Home = () => {
             <Header />
           </div>
           <div>
-            <h1 className="font-mono font-bold md:font-bold sm:text-semibold md:text-sm text-lg text-gray-400 opacity-70">
+            <h1 className="font-mono font-bold md:font-bold sm:text-semibold md:text-sm text-lg text-gray-400 opacity-70 select-none">
               RECENT WORK
             </h1>
           </div>

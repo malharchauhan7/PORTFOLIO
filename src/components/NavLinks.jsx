@@ -26,10 +26,10 @@ const NavLinks = () => {
           Connect
         </motion.h1> */}
         <motion.h1
-          initial={{ opacity: 0.4 }}
+          initial={{ opacity: 0.7 }}
           whileHover={{ scale: 1.03, opacity: 1, transition: 1.5 }}
           onClick={() => navigation("/Designs")}
-          className=" hover:cursor-pointer text-base font-sans font-semibold select-none"
+          className=" hover:cursor-pointer text-base font-sans font-semibold select-nonetext-gray-400"
         >
           DesignFolio
         </motion.h1>
