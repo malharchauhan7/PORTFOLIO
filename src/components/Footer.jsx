@@ -14,7 +14,7 @@ const Footer = () => {
         <NavLinks />
       </div>
       <motion.div className=" flex justify-between items-center h-10 ">
-        <div className="flex gap-3">
+        <div className="flex gap-3 md:gap-3 sm:gap-1">
           <a target="_blank" href="mailto:malharchauhan02@gmail.com">
             <motion.div
               className="github w-[25px] h-[25px]  flex justify-center items-center rounded tooltip tooltip-bottom "
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
 
         <motion.div
-          className="tooltip tooltip-bottom"
+          className="tooltip tooltip-bottom lg:mr-2 "
           data-tip="Theme"
           whileHover={{
             transition: { duration: 0.2 },

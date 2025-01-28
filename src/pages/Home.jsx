@@ -23,12 +23,12 @@ const Home = () => {
         ></motion.div>
       )}
       <div className=" flex pt-20 flex-col items-center justify-start h-100vw md:h-screen ">
-        <main className="w-[90%] md:w-[25%] sm:w-[50%]">
+        <main className="w-[88%] lg:w-[25%] md:w-[50%] sm:w-[50%]">
           <div>
             <Header />
           </div>
           <div>
-            <h1 className="font-mono md:font-bold font-semibold md:text-sm text-lg text-gray-400 opacity-70 select-none">
+            <h1 className="font-mono font-bold md:font-bold sm:text-semibold md:text-sm text-lg text-gray-400 opacity-70">
               RECENT WORK
             </h1>
           </div>
@@ -41,7 +41,7 @@ const Home = () => {
             ))}
           </div>
         </main>
-        <div className="w-[90%] md:w-[25%] sm:w-[50%] my-2 ">
+        <div className="w-[88%] lg:w-[25%] md:w-[50%] sm:w-[50%] my-2 ">
           <Footer />
         </div>
       </div>
