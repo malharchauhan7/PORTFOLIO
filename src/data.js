@@ -14,7 +14,7 @@ const data = [
     content: `A React component that enables smooth scrolling between sections of a webpage. `,
   },
   {
-    title: "Scroll-totop-button",
+    title: "scroll-totop-button",
     year: "2025",
     Tech: "Nodejs NPM Rollup TypeScript",
     link: "https://www.npmjs.com/package/scroll-totop-button",
@@ -28,22 +28,22 @@ const data = [
     content:
       "Easily convert PNG images to JPG, JPEG, WEBP, PDF, GIF or AVIF formats and JPG/JPEG images to PNG.",
   },
-  {
-    title: "TatvaSoft-Internship",
-    year: "2024",
-    Tech: "Virtual Community Support ",
-    link: null,
-    content:
-      "Accomplished the Virtual Community Support Project successfully and Developed skills in .NET, PostgreSQL, and Angular Framework.",
-  },
-  {
-    title: "Algorithm-Visualizer",
-    year: "2024",
-    Tech: "Python matplotlib",
-    link: "https://github.com/malharchauhan7/Algo_Visualizer",
-    content:
-      "An algorithm visualizer is a tool or program that visually demonstrates how an algorithm works, These visualizations are often used to explain and teach complex algorithms.",
-  },
+  // {
+  //   title: "TatvaSoft-Internship",
+  //   year: "2024",
+  //   Tech: "Virtual Community Support ",
+  //   link: null,
+  //   content:
+  //     "Accomplished the Virtual Community Support Project successfully and Developed skills in .NET, PostgreSQL, and Angular Framework.",
+  // },
+  // {
+  //   title: "Algorithm-Visualizer",
+  //   year: "2024",
+  //   Tech: "Python matplotlib",
+  //   link: "https://github.com/malharchauhan7/Algo_Visualizer",
+  //   content:
+  //     "An algorithm visualizer is a tool or program that visually demonstrates how an algorithm works, These visualizations are often used to explain and teach complex algorithms.",
+  // },
   {
     title: "DRIBBINS",
     year: "2023-present",

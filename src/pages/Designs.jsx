@@ -38,14 +38,6 @@ const Designs = () => {
                   className="w-full object-cover rounded-lg hover:cursor-pointer"
                 />
               </a>
-              {/* <p className="font-sans text-sm sm:text-base text-justify ">
-                <span
-                  className="m-2 font-bold text-slate-600 hover:text-slate-500 hover:cursor-pointer"
-                  onClick={() => navigation("/articles")}
-                >
-                  Click here
-                </span>
-              </p> */}
             </div>
             {/* block-2 */}
             <div className="rounded-xl overflow-hidden my-4 w-full max-w-[600px] flex flex-col gap-3 mx-auto p-4 sm:p-6">

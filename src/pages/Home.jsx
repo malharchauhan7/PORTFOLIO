@@ -1,37 +1,49 @@
-import React, { useState } from "react";
-import { easeIn, motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
-import Logo from "../components/Logo";
-import Card from "../components/Card";
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import data from "../data";
-import Accordination from "../components/Accordination";
 import Header from "../components/Header";
-//<a class="btn line-btn-dark btn-icon btn-radius" href="1.pdf" title="" download>
+import ProjectCard from "../components/ProjectCard";
+import Footer from "../components/Footer";
 const Home = () => {
-  const navigation = useNavigate();
-  //onClick={() => navigation("/")}
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
   return (
-    <motion.div
-      layout
-      // initial={{ scale: 1.01 }}
-      // animate={{
-      //   scale: 1,
-      // }}
-      // transition={{ duration: 1 }}
-    >
-      <div className=" flex pt-20 flex-col items-center justify-center h-100vw md:h-screen ">
-        <main className=" w-[80%] md:w-[30%]">
+    <motion.div layout>
+      {/* Overlay Loading Screen */}
+      {loading && (
+        <motion.div
+          className="fixed top-0 left-0 w-full h-full bg-white z-50 flex items-center justify-center select-none"
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 0 }}
+          transition={{ duration: 1.5 }}
+        ></motion.div>
+      )}
+      <div className=" flex pt-20 flex-col items-center justify-start h-100vw md:h-screen ">
+        <main className="w-[90%] md:w-[25%] sm:w-[50%]">
           <div>
-            {" "}
             <Header />
           </div>
+          <div>
+            <h1 className="font-mono md:font-bold font-semibold md:text-sm text-lg text-gray-400 opacity-70 select-none">
+              RECENT WORK
+            </h1>
+          </div>
           <div className="w-full ">
-            {data.map((item, index) => (
-              // <Card data={item} key={index} />
+            {/* {data.map((item, index) => (
               <Accordination data={item} key={index} />
+            ))} */}
+            {data.map((item, index) => (
+              <ProjectCard data={item} key={index} />
             ))}
           </div>
         </main>
+        <div className="w-[90%] md:w-[25%] sm:w-[50%] my-2 ">
+          <Footer />
+        </div>
       </div>
     </motion.div>
   );

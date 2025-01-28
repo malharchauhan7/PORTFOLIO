@@ -17,8 +17,8 @@ const About = () => {
           {" "}
           <h1 className="font-bold">About me</h1>
           <p>
-            Hello, I'm Malhar Chauhan, a final-year BE Computer Engineering
-            student with a passion for technology and design.
+            Hello, I'm Malhar Chauhan, a Computer Engineering student with a
+            passion for technology and design.
           </p>
           <p>
             I specialize in web development and have strong skills in Python ☕,

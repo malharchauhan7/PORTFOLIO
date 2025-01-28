@@ -1,9 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Image from "../images/logo.png";
+import logo from "../images/logo.png";
 import { easeIn, motion, easeOut } from "framer-motion";
-
-const Logo = () => {
+import { PiCoffeeFill } from "react-icons/pi";
+import { LuCoffee } from "react-icons/lu";
+import { FaCoffee } from "react-icons/fa";
+import { PiCoffeeBold } from "react-icons/pi";
+const Logo = ({ currentTheme }) => {
   const navigation = useNavigate();
 
   return (
@@ -17,8 +20,13 @@ const Logo = () => {
       whileInView={{ opacity: 1 }}
       className="hoverable"
     >
-      <div className=" hover:cursor-pointer" onClick={() => navigation("/")}>
-        <img src={Image} alt="" className="w-11 my-4" />
+      <div
+        className="hover:cursor-pointer my-2 tooltip tooltip-bottom"
+        onClick={() => navigation("/")}
+        data-tip="Chai☕"
+      >
+        {/* <img src={logo} alt="" className="w-11 my-4" /> */}
+        <PiCoffeeBold size={25} />
       </div>
     </motion.div>
   );

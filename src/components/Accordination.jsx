@@ -6,7 +6,7 @@ const Accordination = ({ data }) => {
   return (
     <motion.div className=" rounded-lg ">
       <div className="my-1">
-        <div className="collapse join-item border-base-200 border rounded-lg">
+        <div className="collapse join-item border-base-100 border rounded-lg">
           <input type="radio" name="my-accordion-4" />
           <div className="collapse-title text-md font-medium">{data.title}</div>
           <div className="collapse-content text-sm">

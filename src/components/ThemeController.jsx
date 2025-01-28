@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-
+import { IoColorPaletteSharp } from "react-icons/io5";
+import { VscSymbolColor } from "react-icons/vsc";
+import { MdOutlineColorLens } from "react-icons/md";
 const ThemeController = () => {
   const themes = [
     "light",
     "dark",
-    "cupcake",
-    "bumblebee",
-    "emerald",
     "corporate",
     "synthwave",
     "retro",
@@ -15,18 +14,20 @@ const ThemeController = () => {
     "halloween",
     "garden",
     "forest",
+    "emerald",
     "aqua",
     "lofi",
     "pastel",
     "fantasy",
     "wireframe",
-    "black",
+    "cupcake",
     "luxury",
     "dracula",
     "cmyk",
     "autumn",
     "business",
     "acid",
+    "bumblebee",
     "lemonade",
     "night",
     "coffee",
@@ -49,8 +50,8 @@ const ThemeController = () => {
 
   return (
     <div className="">
-      <button className="text-sm md:text-base " onClick={toggleTheme}>
-        THEME
+      <button className="text-sm md:text-base my-2 " onClick={toggleTheme}>
+        <MdOutlineColorLens size={17} />
       </button>
     </div>
   );
