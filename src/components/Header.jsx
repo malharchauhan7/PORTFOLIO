@@ -31,7 +31,7 @@ const Header = () => {
         </div>
 
         <div className="my-4 md:w-[90%] select-none">
-          <h1 className="font-mono font-bold md:font-bold sm:text-semibold md:text-sm text-lg text-gray-400 opacity-70">
+          <h1 className="font-mono font-bold md:font-bold sm:text-semibold md:text-sm text-base text-gray-400 opacity-70">
             ABOUT
           </h1>
           <p className="text-pretty font-medium my-2 md:text-base sm:text-lg ">
