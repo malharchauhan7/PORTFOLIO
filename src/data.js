@@ -3,7 +3,7 @@ const data = [
     title: "Neumorphism Google Drive UI Design",
     year: "2025",
     Tech: "Reactjs TailwindCSS Framer-motion",
-    link: "https://googledrive-neumorphism.vercel.app/",
+    link: "https://malharchauhan7.github.io/googledrive-neumorphism/",
     content: `Neumorphism Google Drive UI ReDesign`,
   },
   {
@@ -24,7 +24,7 @@ const data = [
     title: "File Converter",
     year: "2024",
     Tech: "React TailwinCSS DaisyUI",
-    link: "https://file-converter-xi.vercel.app/",
+    link: "https://malharchauhan7.github.io/File-Converter/",
     content:
       "Easily convert PNG images to JPG, JPEG, WEBP, PDF, GIF or AVIF formats and JPG/JPEG images to PNG.",
   },
