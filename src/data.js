@@ -78,8 +78,8 @@ const data = [
   {
     title: "Simple Web-Compiler",
     year: "2024",
-    Tech: "React  MonacoEditor PistonAPI ",
-    link: "https://web-compiler-rho.vercel.app/",
+    Tech: "React MonacoEditor PistonAPI ",
+    link: "https://malharchauhan7.github.io/web-compiler/",
     content:
       "A simple web compiler using React with Monaco Editor for coding and PistonAPI for multi-language execution.",
   },
