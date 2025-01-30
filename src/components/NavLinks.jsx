@@ -8,7 +8,7 @@ const NavLinks = () => {
   return (
     <div>
       {" "}
-      <div className="w-auto h-10 flex  items-center justify-start gap-2 md:gap-3  ">
+      <div className="w-auto h-10 flex  items-center justify-start ">
         {/* <motion.h1
           initial={{ opacity: 0.4 }}
           whileHover={{ scale: 1.02, opacity: 1 }}
@@ -26,10 +26,10 @@ const NavLinks = () => {
           Connect
         </motion.h1> */}
         <motion.h1
-          initial={{ opacity: 0.7 }}
-          whileHover={{ scale: 1.03, opacity: 1, transition: 1.5 }}
+          initial={{ opacity: 0.6 }}
+          whileHover={{ scale: 1.01, opacity: 1, transition: 2 }}
           onClick={() => navigation("/Designs")}
-          className=" hover:cursor-pointer text-base font-sans font-semibold select-nonetext-gray-400"
+          className="cursor-pointer text-lg font-sans font-base  select-nonetext-gray-400"
         >
           DesignFolio
         </motion.h1>
