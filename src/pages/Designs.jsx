@@ -39,7 +39,7 @@ const Designs = () => {
               Google Drive UI Redesign with Neumorphism
             </h2>
             <a
-              href="https://googledrive-neumorphism.vercel.app/"
+              href="https://malharchauhan7.github.io/googledrive-neumorphism/"
               target="_blank"
               rel="noopener noreferrer"
               className="block"
