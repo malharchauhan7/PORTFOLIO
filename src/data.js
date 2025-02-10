@@ -1,5 +1,12 @@
 const data = [
   {
+    title: "Kanban Board Eletron-Vite",
+    year: "2025",
+    Tech: "Eletron-vite Typescript Reactjs TailwindCSS",
+    link: "https://malharchauhan7.github.io/kanban-board-react/",
+    content: `Neumorphism Google Drive UI ReDesign`,
+  },
+  {
     title: "Neumorphism Google Drive UI Design",
     year: "2025",
     Tech: "Reactjs TailwindCSS Framer-motion",
