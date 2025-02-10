@@ -1,6 +1,6 @@
 const data = [
   {
-    title: "Kanban Board Eletron-Vite",
+    title: "Kanban Board Desktop App",
     year: "2025",
     Tech: "Eletron-vite Typescript Reactjs TailwindCSS",
     link: "https://malharchauhan7.github.io/kanban-board-react/",
