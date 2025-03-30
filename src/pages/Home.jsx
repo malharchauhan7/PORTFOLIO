@@ -36,13 +36,13 @@ const Home = () => {
             <Header />
           </div>
           <div className="my-8">
-            <div className="flex justify-between items-center mb-4">
-              <h1 className="text-sm font-mono text-gray-400 tracking-wider select-none">
+            <div className="flex justify-between items-center mb-3">
+              <h1 className="text-sm font-sans text-gray-400 tracking-wider select-none">
                 BLOGS
               </h1>
               <Link
                 to="/blog"
-                className="text-sm text-gray-400 hover:text-gray-600 transition-colors duration-200"
+                className="text-sm text-gray-400 hover:text-slate-800 transition-colors duration-200"
               >
                 View all
               </Link>
@@ -54,7 +54,7 @@ const Home = () => {
             </div>
           </div>
           <div>
-            <h1 className="text-sm font-mono text-gray-400 tracking-wider mb-4 select-none">
+            <h1 className="text-sm font-sans text-gray-400 tracking-wider mb-3 select-none">
               PROJECTS
             </h1>
             <div className="w-full ">

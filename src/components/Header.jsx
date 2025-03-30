@@ -55,10 +55,10 @@ const Header = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
       >
-        <h2 className="text-sm font-mono text-gray-400 tracking-wider">
+        <h2 className="text-sm font-sans text-gray-400 tracking-wider">
           ABOUT
         </h2>
-        <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-xl">
+        <p className="text-base md:text-md  leading-relaxed max-w-xl text-pretty">
           {description}
         </p>
       </motion.div>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const BlogCard = ({ post, index }) => {
   return (
-    <div className="relative group">
+    <div className="relative group ">
       <motion.div
         className="relative block w-full my-2 group"
         initial={{ opacity: 0, y: 20 }}

@@ -26,7 +26,7 @@ const NavLinks = () => {
           Connect
         </motion.h1> */}
         <motion.div
-          className="flex items-center space-x-6"
+          className="flex items-center space-x-6 "
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
@@ -35,7 +35,7 @@ const NavLinks = () => {
             initial={{ opacity: 0.6 }}
             whileHover={{
               opacity: 1,
-              x: 5,
+              x: 2,
               transition: {
                 duration: 0.2,
                 ease: "easeInOut",
@@ -43,8 +43,9 @@ const NavLinks = () => {
             }}
             whileTap={{ scale: 0.98 }}
             onClick={() => navigate("/Designs")}
-            className="text-lg font-medium text-gray-600 transition-colors 
-                     duration-300 select-none focus:outline-none hover:text-gray-900"
+            className="text-lg font-medium tracking-wide 
+                    transition-colors duration-200 font-sans
+                   select-none focus:outline-none"
           >
             DesignFolio
           </motion.button>
