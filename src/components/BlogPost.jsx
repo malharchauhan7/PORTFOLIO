@@ -66,7 +66,7 @@ const BlogPost = () => {
             whileHover={{ x: -3 }}
             transition={{ duration: 0.2 }}
           >
-            ← Back to Blog
+            ← Back to Blogs
           </motion.span>
         </Link>
         <ThemeController />
