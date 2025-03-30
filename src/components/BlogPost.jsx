@@ -8,11 +8,9 @@ import ThemeController from "./ThemeController";
 const ContentBlock = ({ block, index }) => {
   switch (block.type) {
     case "heading":
-      return (
-        <h2 className="text-xl font-medium  mt-8 mb-4">{block.content}</h2>
-      );
+      return <h2 className="text-xl font-medium mt-8 mb-4">{block.content}</h2>;
     case "paragraph":
-      return <p className=" leading-relaxed mb-4">{block.content}</p>;
+      return <p className="leading-relaxed mb-4 ">{block.content}</p>;
     case "list":
       return (
         <ul className="list-disc pl-6 space-y-2 mb-4">
@@ -33,9 +31,43 @@ const ContentBlock = ({ block, index }) => {
       );
     case "quote":
       return (
-        <blockquote className="border-l-4 border-gray-200 pl-4 italic  mb-4">
+        <blockquote className="border-l-4 border-gray-200 pl-4 italic mb-4 text-gray-600">
           {block.content}
         </blockquote>
+      );
+    case "link":
+      return (
+        <a
+          href={block.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-800 underline decoration-1 underline-offset-2 transition-colors duration-200"
+        >
+          {block.content}
+        </a>
+      );
+    case "image":
+      return (
+        <figure className="mb-6">
+          <img
+            src={block.url}
+            alt={block.caption || ""}
+            className="rounded-lg w-full"
+          />
+          {block.caption && (
+            <figcaption className="text-sm text-gray-500 mt-2 text-center">
+              {block.caption}
+            </figcaption>
+          )}
+        </figure>
+      );
+    case "divider":
+      return <hr className="my-8 border-gray-200" />;
+    case "callout":
+      return (
+        <div className="bg-gray-50 border-l-4 border-gray-400 p-4 rounded-r-lg mb-4">
+          <p className="text-gray-700">{block.content}</p>
+        </div>
       );
     default:
       return null;
