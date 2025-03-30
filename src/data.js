@@ -4,7 +4,6 @@ const data = [
     year: "2025",
     Tech: "Eletron-vite Typescript Reactjs TailwindCSS",
     link: "https://malharchauhan7.github.io/kanban-board-react/",
-    content: `Neumorphism Google Drive UI ReDesign`,
   },
   {
     title: "Neumorphism Google Drive UI Design",
@@ -66,22 +65,22 @@ const data = [
     content:
       "JobNodes is an innovative online community platform where users share job search tips, career advice, and workplace experiences.",
   },
-  {
-    title: "ETHETRADE",
-    year: "2024",
-    Tech: "React Node.js Solidity Metamask",
-    link: "https://dulcet-gumption-c97ca7.netlify.app/",
-    content:
-      "EtheTrade is a crypto-based web application used to transfer Ethereum over the web. This web application is developed using web 3.0 technology.",
-  },
-  {
-    title: "Vitual Community Support",
-    year: "2024",
-    Tech: "Angular .NET PostgreSql",
-    link: "https://github.com/malharchauhan7/Tatvasoft_Tasks",
-    content:
-      "A web app for managing missions and skills, with role-based access for users and admins. Admins manage missions, skills, and themes, while users can apply for missions. ",
-  },
+  // {
+  //   title: "ETHETRADE",
+  //   year: "2024",
+  //   Tech: "React Node.js Solidity Metamask",
+  //   link: "https://dulcet-gumption-c97ca7.netlify.app/",
+  //   content:
+  //     "EtheTrade is a crypto-based web application used to transfer Ethereum over the web. This web application is developed using web 3.0 technology.",
+  // },
+  // {
+  //   title: "Vitual Community Support",
+  //   year: "2024",
+  //   Tech: "Angular .NET PostgreSql",
+  //   link: "https://github.com/malharchauhan7/Tatvasoft_Tasks",
+  //   content:
+  //     "A web app for managing missions and skills, with role-based access for users and admins. Admins manage missions, skills, and themes, while users can apply for missions. ",
+  // },
   {
     title: "Simple Web-Compiler",
     year: "2024",

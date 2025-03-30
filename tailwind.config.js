@@ -2,7 +2,25 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: "none",
+            color: "#374151",
+            lineHeight: "1.75",
+          },
+        },
+        gray: {
+          css: {
+            "--tw-prose-body": "#374151",
+            "--tw-prose-headings": "#111827",
+            "--tw-prose-links": "#374151",
+            maxWidth: "none",
+          },
+        },
+      },
+    },
   },
   daisyui: {
     themes: [
@@ -41,5 +59,5 @@ export default {
     ],
   },
 
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("@tailwindcss/typography")],
 };

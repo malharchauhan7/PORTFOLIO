@@ -29,21 +29,18 @@ const Header = () => {
           </h3>
           {/* <Resume /> */}
         </div>
-
-        <div className="my-4 md:w-[90%] select-none">
-          <h1 className="font-mono font-bold md:font-bold sm:text-semibold md:text-sm text-base text-gray-400 opacity-70">
-            ABOUT
-          </h1>
-          <p className="text-pretty font-medium my-2 md:text-base sm:text-lg ">
-            I am passionate about technology and design, specializing in web
-            development, Python, MERN, Figma, UI design, and graphic design to
-            create digital experiences that combine functionality and
-            aesthetics.
-          </p>
-        </div>
         {/* <div>
           <NavLinks />
         </div> */}
+        <div className="my-4 md:w-[90%] select-none">
+          <h2 className="text-sm font-mono text-gray-400 tracking-wider mb-4 select-none">
+            ABOUT
+          </h2>
+          <p className="text-wrap font-medium my-2 md:text-base sm:text-lg">
+            Full-stack developer and UI designer. Creating seamless digital
+            experiences with modern web technologies and thoughtful design.
+          </p>
+        </div>
       </div>
     </div>
   );
