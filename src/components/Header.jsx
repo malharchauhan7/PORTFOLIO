@@ -1,47 +1,67 @@
-import React, { useState } from "react";
-import { easeIn, motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
-import Logo from "../components/Logo";
-import NavLinks from "./NavLinks";
-import Resume from "./Resume";
+import React from "react";
+import { motion } from "framer-motion";
+import Logo from "./Logo";
+
 const Header = () => {
-  const text = "Malhar Chauhan";
-  const navigation = useNavigate();
+  const name = "Malhar Chauhan";
+  const roles = ["Developer", "Designer"];
+  const description = `Full-stack developer and UI designer with a passion for creating seamless digital experiences. 
+    I specialize in modern web technologies and thoughtful design patterns to build intuitive user interfaces.`;
+
   return (
-    <div>
-      <div className="">
-        <div className="flex flex-col items-start">
-          <Logo />
-          <motion.div className="text font-sans font-bold select-none">
-            {text.split("").map((letter, index) => (
-              <motion.span
-                key={index}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.1, delay: index * 0.1 }}
-              >
-                {letter}
-              </motion.span>
-            ))}
-          </motion.div>
-          <h3 className="font-sans text-base select-none">
-            Developer & <motion.span>Designer</motion.span>
-          </h3>
-          {/* <Resume /> */}
-        </div>
-        {/* <div>
-          <NavLinks />
-        </div> */}
-        <div className="my-4 md:w-[90%] select-none">
-          <h2 className="text-sm font-mono text-gray-400 tracking-wider mb-4 select-none">
-            ABOUT
-          </h2>
-          <p className="text-wrap font-medium my-2 md:text-base sm:text-lg">
-            Full-stack developer and UI designer. Creating seamless digital
-            experiences with modern web technologies and thoughtful design.
-          </p>
-        </div>
+    <div className="space-y-6">
+      <div className="flex flex-col items-start">
+        <Logo />
+
+        {/* Animated Name */}
+        <motion.h1
+          className="text-2xl font-bold tracking-tight"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          {name.split("").map((letter, index) => (
+            <motion.span
+              key={index}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.2, delay: index * 0.1 }}
+            >
+              {letter}
+            </motion.span>
+          ))}
+        </motion.h1>
+
+        {/* Roles */}
+        <motion.div
+          className="flex gap-2 text-lg text-gray-600"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          {roles.map((role, index) => (
+            <React.Fragment key={role}>
+              <span>{role}</span>
+              {index < roles.length - 1 && <span>&</span>}
+            </React.Fragment>
+          ))}
+        </motion.div>
       </div>
+
+      {/* About Section */}
+      <motion.div
+        className="space-y-2"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+      >
+        <h2 className="text-sm font-mono text-gray-400 tracking-wider">
+          ABOUT
+        </h2>
+        <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-xl">
+          {description}
+        </p>
+      </motion.div>
     </div>
   );
 };
