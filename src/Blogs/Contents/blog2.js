@@ -1,5 +1,5 @@
 export default {
-  title: "Neumorphism Google Drive UI Design",
+  title: "Neumorphism Google Drive Design",
   slug: "neumorphism-google-drive-design",
   date: "16 Aug 2024",
   readTime: "5 min read",
@@ -10,6 +10,9 @@ export default {
       type: "paragraph",
       content:
         "Neumorphism is a modern UI design trend that blends elements of flat design with skeuomorphism. It uses soft shadows, gradients, and rounded corners to give digital elements a tactile, three-dimensional feel while maintaining a minimalist aesthetic.",
+    },
+    {
+      type: "divider",
     },
     {
       type: "heading",
@@ -27,6 +30,9 @@ export default {
       ],
     },
     {
+      type: "divider",
+    },
+    {
       type: "heading",
       content: "User Experience Impact",
     },
@@ -34,6 +40,9 @@ export default {
       type: "paragraph",
       content:
         "Neumorphism enhances the user experience by making the interface feel intuitive and engaging. The subtle shadows guide the user's attention, highlighting key features without being distracting.",
+    },
+    {
+      type: "divider",
     },
     {
       type: "heading",
@@ -52,6 +61,22 @@ export default {
       type: "paragraph",
       content:
         "Scalability: Maintaining design integrity across different devices can be challenging due to the detailed shadowing and gradients.",
+    },
+    {
+      type: "divider",
+    },
+    {
+      type: "subheading",
+      content: "You can checkout figma file",
+    },
+    {
+      type: "link",
+      url:
+        "https://www.figma.com/community/file/1406357600679855634/google-drive-neumorphism",
+      content: "View",
+    },
+    {
+      type: "divider",
     },
     {
       type: "heading",
