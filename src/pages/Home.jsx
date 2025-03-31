@@ -7,11 +7,12 @@ import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/Footer";
 import BlogCard from "../components/BlogCard";
 import { blogPosts } from "../Blogs/BlogPostContent";
+import { projects } from "../data/projects";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
   const latestPosts = blogPosts.slice(0, 3);
-  const latestProjects = data.slice(0, 6);
+  const latestProjects = projects.slice(0, 6);
 
   useEffect(() => {
     setTimeout(() => {

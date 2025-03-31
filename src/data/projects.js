@@ -7,7 +7,7 @@ export const projects = [
     status: "Ongoing",
     tech: ["FastAPI", "MongoDB", "Reactjs", "TailwindCSS"],
     image: "https://i.ibb.co/nsxNMdtH/expensemate.png",
-    demo: "https://malharchauhan7.github.io/kanban-board-react/",
+    demo: "https://github.com/malharchauhan7/Expense_Tracker",
     github: "https://github.com/malharchauhan7/Expense_Tracker",
   },
   {

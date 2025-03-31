@@ -5,7 +5,7 @@ const ProjectCard = ({ data, index }) => {
   return (
     <div className="relative group">
       <motion.a
-        href={data.link}
+        href={data.demo}
         target="_blank"
         rel="noopener noreferrer"
         className="relative block w-full my-2 group"
@@ -36,8 +36,8 @@ const ProjectCard = ({ data, index }) => {
              before:-translate-y-1/2 before:border-8 before:border-y-transparent 
              before:border-l-transparent before:border-r-gray-800 shadow-lg"
         >
-          <p>{data.content || "Click to view project"}</p>
-          <p className="text-xs text-gray-400 mt-1">{data.Tech}</p>
+          <p>{data.description || "Click to view project"}</p>
+          <p className="text-xs text-gray-400 mt-1">{data.tech}</p>
         </div>
       </motion.a>
     </div>
