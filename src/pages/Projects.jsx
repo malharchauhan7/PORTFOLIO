@@ -4,20 +4,6 @@ import Logo from "../components/Logo";
 import ThemeController from "../components/ThemeController";
 import { projects } from "../data/projects";
 const Projects = () => {
-  //   const projects = [
-  //     {
-  //       title: "Portfolio Website",
-  //       description: "A minimal portfolio built with React and Tailwind CSS",
-  //       timeline: "March 2024",
-  //       status: "Completed",
-  //       tech: ["React", "Tailwind", "Framer Motion"],
-  //       image: "/projects/portfolio.png",
-  //       demo: "https://your-portfolio.com",
-  //       github: "https://github.com/yourusername/portfolio",
-  //     },
-  //     // Add more projects here
-  //   ];
-
   return (
     <motion.div
       initial={{ opacity: 0 }}

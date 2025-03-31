@@ -5,7 +5,10 @@ const Resume = () => {
   return (
     <div>
       <a href="https://malharchauhan7.github.io/resume.cv/">
-        <motion.button className="btn btn-xs " whileHover={{ scale: 1.05 }}>
+        <motion.button
+          className="btn btn-xs btn-neutral"
+          whileHover={{ scale: 1.05 }}
+        >
           Resume
         </motion.button>
       </a>
