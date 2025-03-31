@@ -9,6 +9,18 @@ const ContentBlock = ({ block, index }) => {
   switch (block.type) {
     case "heading":
       return <h2 className="text-xl font-medium mt-8 mb-4">{block.content}</h2>;
+    case "subheading":
+      return (
+        <h3 className="text-lg font-medium text-gray-700 mt-6 mb-3">
+          {block.content}
+        </h3>
+      );
+    case "subsubheading":
+      return (
+        <h4 className="text-md font-medium text-gray-600 mt-4 mb-2">
+          {block.content}
+        </h4>
+      );
     case "paragraph":
       return <p className="leading-relaxed mb-4 ">{block.content}</p>;
     case "list":

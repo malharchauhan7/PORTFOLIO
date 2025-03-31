@@ -1,7 +1,7 @@
 export default {
   title: "Welcome to my first blog",
   slug: "welcome-my-first-blog",
-  date: "30 March 2025",
+  date: "2025",
   readTime: "1 min read",
   excerpt:
     "This blog is my little corner of the internet where I share everything I love about coding and design. ",
