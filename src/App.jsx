@@ -8,6 +8,7 @@ import Newsletter from "./pages/Newsletter";
 import Designs from "./pages/Designs";
 import Blog from "./pages/Blog";
 import BlogPost from "./components/BlogPost";
+import Projects from "./pages/Projects";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
           <Route path="/Designs" element={<Designs />}></Route>
           <Route path="/blog" element={<Blog />}></Route>
           <Route path="/blog/:slug" element={<BlogPost />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
         </Routes>
       </BrowserRouter>
     </>
