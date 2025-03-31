@@ -6,7 +6,7 @@ export const projects = [
     timeline: "Jan - Apr 2025",
     status: "Ongoing",
     tech: ["FastAPI", "MongoDB", "Reactjs", "TailwindCSS"],
-    image: "https://i.ibb.co/F4Kmvd8k/kanbanboard.png",
+    image: "https://i.ibb.co/nsxNMdtH/expensemate.png",
     demo: "https://malharchauhan7.github.io/kanban-board-react/",
     github: "https://github.com/malharchauhan7/Expense_Tracker",
   },
