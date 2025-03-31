@@ -37,7 +37,16 @@ const ProjectCard = ({ data, index }) => {
              before:border-l-transparent before:border-r-gray-800 shadow-lg"
         >
           <p>{data.description || "Click to view project"}</p>
-          <p className="text-xs text-gray-400 mt-1">{data.tech}</p>
+          <div className="flex flex-wrap gap-2 mt-2">
+            {data.tech?.map((tech, i) => (
+              <span
+                key={i}
+                className="text-xs bg-gray-700 text-gray-200 px-2 py-0.5 rounded-full"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
         </div>
       </motion.a>
     </div>

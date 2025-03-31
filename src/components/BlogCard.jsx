@@ -39,7 +39,7 @@ const BlogCard = ({ post, index }) => {
         >
           <div className="space-y-1">
             <p>{post.excerpt}</p>
-            <p className="text-xs text-gray-400">{post.readTime}</p>
+            <p className="text-xs  text-gray-400 ">{post.readTime}</p>
           </div>
         </div>
       </motion.div>
