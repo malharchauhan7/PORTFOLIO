@@ -15,7 +15,7 @@ const Blog = () => {
     >
       <Logo />
       <div className="font-bold text-2xl my-4 flex gap-2">
-        <h1>Blog</h1>
+        <h1>Blogs</h1>
         <ThemeController />
       </div>
 
