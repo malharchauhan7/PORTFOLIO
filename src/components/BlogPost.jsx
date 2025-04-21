@@ -53,7 +53,7 @@ const ContentBlock = ({ block, index }) => {
           href={block.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-600 hover:text-blue-800 underline decoration-1 underline-offset-2 transition-colors duration-200"
+          className="text-blue-600 hover:text-blue-800 underline decoration-1 underline-offset-2 transition-colors duration-200 m"
         >
           {block.content}
         </a>
@@ -81,6 +81,8 @@ const ContentBlock = ({ block, index }) => {
           <p className="text-gray-700">{block.content}</p>
         </div>
       );
+    case "space":
+      return <div className="my-8" />;
     default:
       return null;
   }

@@ -20,11 +20,13 @@ const BlogCard = ({ post, index }) => {
         }}
       >
         <Link to={`/blog/${post.slug}`}>
-          <div className="flex items-center justify-between">
-            <span className="text-lg font-medium transition-colors duration-300 peer">
+          <div className="flex items-center justify-between group">
+            <span className="text-lg font-medium transition-colors duration-300 line-clamp-2 leading-7 max-w-[70%]">
               {post.title}
             </span>
-            <span className="text-sm text-gray-500">{post.date}</span>
+            <span className="text-sm text-gray-500 ml-4 shrink-0">
+              {post.date}
+            </span>
           </div>
         </Link>
 
@@ -38,7 +40,7 @@ const BlogCard = ({ post, index }) => {
           before:border-l-transparent before:border-r-gray-800 shadow-lg"
         >
           <div className="space-y-1">
-            <p>{post.excerpt}</p>
+            <p className="">{post.excerpt}</p>
             <p className="text-xs  text-gray-400 ">{post.readTime}</p>
           </div>
         </div>

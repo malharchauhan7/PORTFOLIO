@@ -7,7 +7,7 @@ export const projects = [
     status: "Ongoing",
     tech: ["FastAPI", "MongoDB", "Reactjs", "TailwindCSS"],
     image: "https://i.ibb.co/nsxNMdtH/expensemate.png",
-    demo: "",
+    demo: "https://github.com/malharchauhan7/Expense_Tracker",
     github: "https://github.com/malharchauhan7/Expense_Tracker",
   },
   {
@@ -17,7 +17,7 @@ export const projects = [
     status: "InDevelopment",
     tech: ["FastAPI", "MongoDB", "Reactjs", "TailwindCSS", "ExpressJS"],
     image: "https://i.ibb.co/Tx76wD3D/ziply.png",
-    demo: "",
+    demo: "https://github.com/malharchauhan7/Ziply",
     github: "https://github.com/malharchauhan7/Ziply",
   },
   {

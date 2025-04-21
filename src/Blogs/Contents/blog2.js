@@ -1,8 +1,8 @@
 export default {
-  title: "Neumorphism Google Drive",
+  title: "Neumorphism Google Drive Design",
   slug: "neumorphism-google-drive",
   date: "16 Aug 2024",
-  readTime: "5 min read",
+  readTime: "3 min read",
   excerpt: "Exploring the Modern Fusion of Flat Design and Skeuomorphism.",
   image: "https://i.ibb.co/yBbDNRr/driveredesign.png",
   content: [
