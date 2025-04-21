@@ -8,10 +8,6 @@ export default defineConfig({
     sourcemap: false,
     rollupOptions: {
       output: {
-        format: "es",
-        entryFileNames: "assets/[name].[hash].js",
-        chunkFileNames: "assets/[name].[hash].js",
-        assetFileNames: "assets/[name].[hash][extname]",
         manualChunks: {
           vendor: ["react", "react-dom", "react-router-dom"],
           animations: ["framer-motion"],
@@ -20,7 +16,11 @@ export default defineConfig({
     },
   },
   server: {
-    middlewareMode: "html",
+    port: 3000,
+    open: true,
+  },
+  preview: {
+    port: 3000,
   },
   base: "/",
 });

@@ -9,6 +9,7 @@ import Designs from "./pages/Designs";
 import Blog from "./pages/Blog";
 import BlogPost from "./components/BlogPost";
 import Projects from "./pages/Projects";
+
 function App() {
   return (
     <>
