@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "framework": "vite",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)\\.js",
+      "headers": {
+        "Content-Type": "text/javascript"
+      },
+      "continue": true
+    },
+    {
+      "src": "/(.*)\\.mjs",
+      "headers": {
+        "Content-Type": "text/javascript"
+      },
+      "continue": true
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "github": {
+    "silent": true,
+    "autoAlias": true
+  }
+}
