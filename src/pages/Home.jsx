@@ -19,7 +19,22 @@ const Home = () => {
       setLoading(false);
     }, 1000);
   }, []);
-
+  const LinkWithArrow = ({ to, children }) => (
+    <Link
+      to={to}
+      className="group flex items-center text-sm text-gray-400 hover:text-slate-800 transition-colors duration-200"
+    >
+      <span>{children}</span>
+      <motion.span
+        className="inline-block ml-1"
+        initial={{ x: 0 }}
+        whileHover={{ x: 4 }}
+        transition={{ duration: 0.2 }}
+      >
+        →
+      </motion.span>
+    </Link>
+  );
   return (
     <motion.div layout>
       {/* Overlay Loading Screen */}
@@ -41,12 +56,8 @@ const Home = () => {
               <h1 className="text-sm font-sans text-gray-400 tracking-wider select-none">
                 BLOGS
               </h1>
-              <Link
-                to="/blog"
-                className="text-sm text-gray-400 hover:text-slate-800 transition-colors duration-200"
-              >
-                →
-              </Link>
+
+              <LinkWithArrow to="/blog">View all</LinkWithArrow>
             </div>
             <div className="space-y-4">
               {latestPosts.map((post, index) => (
@@ -59,12 +70,7 @@ const Home = () => {
               <h1 className="text-sm font-sans text-gray-400 tracking-wider select-none">
                 PROJECTS
               </h1>
-              <Link
-                to="/projects"
-                className="text-sm text-gray-400 hover:text-slate-800 transition-colors duration-200"
-              >
-                →
-              </Link>
+              <LinkWithArrow to="/projects">View all</LinkWithArrow>
             </div>
             <div className="w-full ">
               {latestProjects.map((item, index) => (
