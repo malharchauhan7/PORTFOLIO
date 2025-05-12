@@ -11,8 +11,8 @@ import { projects } from "../data/projects";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
-  const latestPosts = blogPosts.slice(0, 3);
-  const latestProjects = projects.slice(0, 6);
+  const latestPosts = blogPosts.slice(0, 2);
+  const latestProjects = projects.slice(0, 4);
 
   useEffect(() => {
     setTimeout(() => {
@@ -24,14 +24,13 @@ const Home = () => {
       to={to}
       className="group flex items-center text-sm text-gray-400 hover:text-slate-800 transition-colors duration-200"
     >
-      <span>{children}</span>
       <motion.span
         className="inline-block ml-1"
         initial={{ x: 0 }}
-        whileHover={{ x: 4 }}
+        whileHover={{ x: 2 }}
         transition={{ duration: 0.2 }}
       >
-        →
+        <span>{children}</span> →
       </motion.span>
     </Link>
   );

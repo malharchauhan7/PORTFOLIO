@@ -5,8 +5,9 @@ import Logo from "./Logo";
 const Header = () => {
   const name = "Malhar Chauhan";
   const roles = ["Developer", "Designer"];
-  const description = `Full-stack developer and UI designer with a passion for creating seamless digital experiences. 
-    I specialize in modern web technologies and thoughtful design patterns to build intuitive user interfaces.`;
+  // const description = `Full-stack developer and UI designer with a passion for creating seamless digital experiences.
+  //   I specialize in modern web technologies and thoughtful design patterns to build intuitive user interfaces.`;
+  const description = `I'm a full-stack dev and UI designer who turns coffee into clean code and pixels into pretty things. I build websites that work great and look even better.`;
 
   return (
     <div className="space-y-6">
