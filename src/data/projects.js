@@ -7,7 +7,7 @@ export const projects = [
     status: "Completed",
     tech: ["Reactjs", "TailwindCSS", "Gemini 2.0 Flash", "ShadcnUI"],
     image:
-      "https://ik.imagekit.io/zh57cbpyz/ProjectImages/ChatGPT%20Image%20May%2016,%202025,%2010_52_32%20PM.png?updatedAt=1747417372289",
+      "https://ik.imagekit.io/zh57cbpyz/ProjectImages/image.png?updatedAt=1748017027854",
     demo: "https://betterprompt-gen.vercel.app/",
     github: "",
   },

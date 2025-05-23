@@ -38,19 +38,12 @@ const Designs = () => {
             <h2 className="text-lg font-medium  mb-3 text-center">
               Google Drive UI Redesign with Neumorphism
             </h2>
-            <a
-              href="https://malharchauhan7.github.io/googledrive-neumorphism/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block"
-            >
-              <motion.img
-                src="https://i.ibb.co/yBbDNRr/driveredesign.png"
-                alt="Google Drive UI Redesign"
-                className="w-full rounded-lg shadow-lg "
-                whileHover={{ scale: 0.98 }}
-              />
-            </a>
+
+            <motion.img
+              src="https://i.ibb.co/yBbDNRr/driveredesign.png"
+              alt="Google Drive UI Redesign"
+              className="w-full rounded-lg shadow-lg "
+            />
           </div>
 
           {/* Block 2: Instagram Carousel Designs */}
