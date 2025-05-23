@@ -5,6 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { MdMailOutline } from "react-icons/md";
 import { FiLinkedin } from "react-icons/fi";
+import { TbBrandProducthunt } from "react-icons/tb";
 import NavLinks from "./NavLinks";
 import Resume from "./Resume";
 const Footer = () => {
@@ -71,6 +72,18 @@ const Footer = () => {
               data-tip="LinkedIn"
             >
               <FiLinkedin size={17} />
+            </motion.div>
+          </a>
+          <a target="_blank" href="https://www.producthunt.com/@mrpurrfect">
+            <motion.div
+              className="github w-[25px] h-[25px]  flex justify-center items-center rounded tooltip tooltip-bottom "
+              whileHover={{
+                transition: { duration: 0.2 },
+                scale: 1.02,
+              }}
+              data-tip="ProductHunt"
+            >
+              <TbBrandProducthunt size={21} />
             </motion.div>
           </a>
           <div>

@@ -1,5 +1,17 @@
 export const projects = [
   {
+    title: "BetterPrompt-Free AI Prompt Generator",
+    description:
+      "A Simple Web application to Generate & Enhance Free Prompts for AI",
+    timeline: "2025",
+    status: "Completed",
+    tech: ["Reactjs", "TailwindCSS", "Gemini 2.0 Flash", "ShadcnUI"],
+    image:
+      "https://ik.imagekit.io/zh57cbpyz/ProjectImages/ChatGPT%20Image%20May%2016,%202025,%2010_52_32%20PM.png?updatedAt=1747417372289",
+    demo: "https://betterprompt-gen.vercel.app/",
+    github: "",
+  },
+  {
     title: "ExpenseMate - An Expense Tracker",
     description:
       "A full-stack web application for tracking personal and organizational expenses with separate user and admin interfaces.",
@@ -19,6 +31,17 @@ export const projects = [
     image: "https://i.ibb.co/Tx76wD3D/ziply.png",
     demo: "https://github.com/malharchauhan7/Ziply",
     github: "https://github.com/malharchauhan7/Ziply",
+  },
+  {
+    title: "File Converter",
+    description:
+      "Easily convert PNG images to JPG, JPEG, WEBP, PDF, GIF or AVIF formats and JPG/JPEG images to PNG.",
+    timeline: "2024",
+    status: "Completed",
+    tech: ["React", "TailwindCSS", "DaisyUI"],
+    image: "https://i.ibb.co/F4n68dwg/fileconverter.png",
+    demo: "https://malharchauhan7.github.io/File-Converter/",
+    github: "https://github.com/malharchauhan7/File-Converter",
   },
   {
     title: "Kanban Board Desktop App",
@@ -61,17 +84,6 @@ export const projects = [
     image: "",
     demo: "https://www.npmjs.com/package/scroll-totop-button",
     github: "https://github.com/malharchauhan7/scroll-totop-button",
-  },
-  {
-    title: "File Converter",
-    description:
-      "Easily convert PNG images to JPG, JPEG, WEBP, PDF, GIF or AVIF formats and JPG/JPEG images to PNG.",
-    timeline: "2024",
-    status: "Completed",
-    tech: ["React", "TailwindCSS", "DaisyUI"],
-    image: "https://i.ibb.co/F4n68dwg/fileconverter.png",
-    demo: "https://malharchauhan7.github.io/File-Converter/",
-    github: "https://github.com/malharchauhan7/File-Converter",
   },
   {
     title: "DRIBBINS",
