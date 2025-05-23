@@ -32,12 +32,12 @@ const BlogCard = ({ post, index }) => {
 
         <div
           className="absolute left-full top-1/2 ml-4 -translate-y-1/2 px-3 py-2 
-          bg-gray-800 text-white text-sm rounded-lg opacity-0 
+          bg-neutral text-white text-sm rounded-lg opacity-0 
           pointer-events-none transition-opacity group-hover:opacity-100
           min-w-[250px] whitespace-normal
           before:content-[''] before:absolute before:top-1/2 before:right-full 
           before:-translate-y-1/2 before:border-8 before:border-y-transparent 
-          before:border-l-transparent before:border-r-gray-800 shadow-lg"
+          before:border-l-transparent before:border-r-neutral shadow-lg"
         >
           <div className="space-y-1">
             <p className="">{post.excerpt}</p>

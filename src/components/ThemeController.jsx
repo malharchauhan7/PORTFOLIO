@@ -4,8 +4,10 @@ import { VscSymbolColor } from "react-icons/vsc";
 import { MdOutlineColorLens } from "react-icons/md";
 const ThemeController = () => {
   const themes = [
-    "light",
+    "cmyk",
     "dark",
+    "lofi",
+    "light",
     "corporate",
     "synthwave",
     "retro",

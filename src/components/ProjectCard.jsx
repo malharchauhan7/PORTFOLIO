@@ -29,12 +29,12 @@ const ProjectCard = ({ data, index }) => {
         </span>
         <div
           className="absolute left-full top-1/2 ml-4 -translate-y-1/2 px-3 py-2 
-             bg-gray-800 text-white text-sm rounded-lg opacity-0 
+              text-white text-sm rounded-lg opacity-0 bg-neutral
              pointer-events-none transition-opacity group-hover:opacity-100
              min-w-[250px] whitespace-normal
              before:content-[''] before:absolute before:top-1/2 before:right-full 
              before:-translate-y-1/2 before:border-8 before:border-y-transparent 
-             before:border-l-transparent before:border-r-gray-800 shadow-lg"
+             before:border-l-transparent before:border-r-neutral shadow-lg"
         >
           <img src={data.image} alt={data.image} className="rounded mb-2" />
           <p>{data.description || "Click to view project"}</p>
@@ -42,7 +42,7 @@ const ProjectCard = ({ data, index }) => {
             {data.tech?.map((tech, i) => (
               <span
                 key={i}
-                className="text-xs bg-gray-700 text-gray-200 px-2 py-0.5 rounded-full"
+                className="text-xs  bg-secondary    px-2 py-0.5 rounded-full"
               >
                 {tech}
               </span>

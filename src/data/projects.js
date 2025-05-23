@@ -27,7 +27,7 @@ export const projects = [
     description: "A modern URL shortening service built with the MERN stack",
     timeline: "2025",
     status: "InDevelopment",
-    tech: ["FastAPI", "MongoDB", "Reactjs", "TailwindCSS", "ExpressJS"],
+    tech: ["Nodejs", "MongoDB", "Reactjs", "TailwindCSS", "ExpressJS"],
     image: "https://i.ibb.co/Tx76wD3D/ziply.png",
     demo: "https://github.com/malharchauhan7/Ziply",
     github: "https://github.com/malharchauhan7/Ziply",
