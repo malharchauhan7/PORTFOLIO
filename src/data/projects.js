@@ -1,5 +1,16 @@
 export const projects = [
   {
+    title: "Web development Cheatsheets",
+    description: "Comprehensive collection of development cheatsheets",
+    timeline: "2025",
+    status: "Completed",
+    tech: ["Github Pages", "Markdown"],
+    image:
+      "https://ik.imagekit.io/zh57cbpyz/ProjectImages/Screenshot%202025-06-03%20203931.png?updatedAt=1748963402349",
+    demo: "https://malharchauhan7.github.io/web-development-cheatsheets/",
+    github: "https://github.com/malharchauhan7/web-development-cheatsheets",
+  },
+  {
     title: "BetterPrompt-Free AI Prompt Generator",
     description:
       "A Simple Web application to Generate & Enhance Free Prompts for AI",
