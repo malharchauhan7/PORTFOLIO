@@ -12,7 +12,7 @@ import { projects } from "../data/projects";
 const Home = () => {
   const [loading, setLoading] = useState(true);
   const latestPosts = blogPosts.slice(0, 2);
-  const latestProjects = projects.slice(0, 4);
+  const latestProjects = projects.slice(0, 5);
 
   useEffect(() => {
     setTimeout(() => {

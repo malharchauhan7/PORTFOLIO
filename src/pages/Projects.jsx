@@ -80,7 +80,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       className="flex items-center text-gray-500 hover:text-gray-700 transition-colors"
                     >
-                      <span>Live Demo</span>
+                      <span>Live </span>
                       <svg
                         className="w-4 h-4 ml-1"
                         fill="none"

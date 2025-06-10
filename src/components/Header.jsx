@@ -8,7 +8,7 @@ const Header = () => {
   // const description = `Full-stack developer and UI designer with a passion for creating seamless digital experiences.
   //   I specialize in modern web technologies and thoughtful design patterns to build intuitive user interfaces.`;
   const description = `I'm a full-stack dev and UI designer who turns coffee into clean code and pixels into pretty things. I build websites that work great and look even better.`;
-
+  // const projectbuilds = `Building DevBrief.xyz Resourcegallery.xyz`;
   return (
     <div className="space-y-6">
       <div className="flex flex-col items-start">
@@ -47,6 +47,30 @@ const Header = () => {
             </React.Fragment>
           ))}
         </motion.div>
+        <motion.div
+          className="mt-2"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+        >
+          <p className="text-base font-medium md:text-md  leading-relaxed max-w-xl text-pretty">
+            <span>Building</span>{" "}
+            <a
+              href="https://www.devbrief.xyz/"
+              className="hover:text-pink-500 transition-colors duration-500"
+              target="_blank"
+            >
+              DevBrief
+            </a>{" "}
+            <a
+              href="https://www.resourcegallery.xyz/"
+              className="hover:text-orange-500 transition-colors duration-500"
+              target="_blank"
+            >
+              ResourceGallery
+            </a>
+          </p>
+        </motion.div>
       </div>
 
       {/* About Section */}
@@ -59,6 +83,7 @@ const Header = () => {
         <h2 className="text-sm font-sans text-gray-400 tracking-wider">
           ABOUT
         </h2>
+
         <p className="text-base md:text-md  leading-relaxed max-w-xl text-pretty">
           {description}
         </p>

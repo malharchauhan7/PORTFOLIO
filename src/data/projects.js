@@ -1,5 +1,16 @@
 export const projects = [
   {
+    title: "DevBrief.xyz",
+    description: "One Platform, Endless SaaS Ideas",
+    timeline: "2025",
+    status: "inDevelopment",
+    tech: ["Nextjs", "Vercel", "Gemini", "Clerk", "OpenAI"],
+    image:
+      "https://ik.imagekit.io/zh57cbpyz/ProjectImages/Screenshot%202025-06-09%20234922.png?updatedAt=1749547915967",
+    demo: "https://www.devbrief.xyz/",
+    github: "",
+  },
+  {
     title: "The Only Cheatsheets",
     description: "Comprehensive collection of cheatsheets",
     timeline: "2025",
@@ -9,6 +20,17 @@ export const projects = [
       "https://ik.imagekit.io/zh57cbpyz/ProjectImages/Screenshot%202025-06-03%20203931.png?updatedAt=1748963402349",
     demo: "https://malharchauhan7.github.io/the-only-cheatsheets/",
     github: "https://github.com/malharchauhan7/the-only-cheatsheets",
+  },
+  {
+    title: "SketchBoard Art",
+    description: "Leave your mark by sketching something :)",
+    timeline: "2025",
+    status: "Completed",
+    tech: ["Nextjs", "React", "TailwindCSS", "Neon PostgreSQL"],
+    image:
+      "https://ik.imagekit.io/zh57cbpyz/ProjectImages/image.png?updatedAt=1749548622911",
+    demo: "https://sketchboard-art.vercel.app/",
+    github: "https://github.com/malharchauhan7/sketchboard-art",
   },
   {
     title: "BetterPrompt-Free AI Prompt Generator",
