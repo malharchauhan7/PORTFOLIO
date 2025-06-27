@@ -56,11 +56,11 @@ const Header = () => {
           <p className="text-base font-medium md:text-md  leading-relaxed max-w-xl text-pretty">
             <span>Building</span>{" "}
             <a
-              href="https://www.devbrief.xyz/"
-              className="hover:text-pink-500 transition-colors duration-500"
+              href="https://www.devone.space/"
+              className="hover:text-blue-500 transition-colors duration-500"
               target="_blank"
             >
-              DevBrief
+              devone.space
             </a>{" "}
             <a
               href="https://www.resourcegallery.xyz/"

@@ -11,7 +11,7 @@ import { projects } from "../data/projects";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
-  const latestPosts = blogPosts.slice(0, 2);
+  const latestPosts = blogPosts.slice(0, 1);
   const latestProjects = projects.slice(0, 5);
 
   useEffect(() => {

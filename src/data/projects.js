@@ -1,5 +1,16 @@
 export const projects = [
   {
+    title: "devone.space",
+    description: "A collection of 75+ developer tools — all in your browser.",
+    timeline: "2025",
+    status: "New Updates",
+    tech: ["Nextjs", "Vercel", "Gemini", "daisyUI", "TailwindCSS"],
+    image:
+      "https://ik.imagekit.io/zh57cbpyz/ProjectImages/Frame%2041.png?updatedAt=1751050685128",
+    demo: "https://www.devone.space/",
+    github: "https://github.com/malharchauhan7/devone.space",
+  },
+  {
     title: "DevBrief.xyz",
     description: "One Platform, Endless SaaS Ideas",
     timeline: "2025",
@@ -8,7 +19,7 @@ export const projects = [
     image:
       "https://ik.imagekit.io/zh57cbpyz/ProjectImages/Screenshot%202025-06-09%20234922.png?updatedAt=1749547915967",
     demo: "https://www.devbrief.xyz/",
-    github: "",
+    github: "https://github.com/malharchauhan7/devbrief.xyz",
   },
   {
     title: "The Only Cheatsheets",
@@ -22,17 +33,6 @@ export const projects = [
     github: "https://github.com/malharchauhan7/the-only-cheatsheets",
   },
   {
-    title: "SketchBoard Art",
-    description: "Leave your mark by sketching something :)",
-    timeline: "2025",
-    status: "Completed",
-    tech: ["Nextjs", "React", "TailwindCSS", "Neon PostgreSQL"],
-    image:
-      "https://ik.imagekit.io/zh57cbpyz/ProjectImages/image.png?updatedAt=1749548622911",
-    demo: "https://sketchboard-art.vercel.app/",
-    github: "https://github.com/malharchauhan7/sketchboard-art",
-  },
-  {
     title: "BetterPrompt-Free AI Prompt Generator",
     description:
       "A Simple Web application to Generate & Enhance Free Prompts for AI",
@@ -44,6 +44,29 @@ export const projects = [
     demo: "https://betterprompt-gen.vercel.app/",
     github: "",
   },
+  {
+    title: "ConsoleGPT",
+    description: "A retro-themed ChatGPT clone with a minimalist console UI",
+    timeline: "2025",
+    status: "Completed",
+    tech: ["Nextjs", "React", "TailwindCSS", "Neon PostgreSQL"],
+    image:
+      "https://ik.imagekit.io/zh57cbpyz/ProjectImages/Frame%2024.png?updatedAt=1751051394088",
+    demo: "https://console-gpt.vercel.app/",
+    github: "https://github.com/malharchauhan7/console-gpt-v1",
+  },
+  {
+    title: "SketchBoard Art",
+    description: "Leave your mark by sketching something :)",
+    timeline: "2025",
+    status: "Completed",
+    tech: ["Nextjs", "React", "TailwindCSS", "Neon PostgreSQL"],
+    image:
+      "https://ik.imagekit.io/zh57cbpyz/ProjectImages/image.png?updatedAt=1749548622911",
+    demo: "https://sketchboard-art.vercel.app/",
+    github: "https://github.com/malharchauhan7/sketchboard-art",
+  },
+
   {
     title: "ExpenseMate - An Expense Tracker",
     description:

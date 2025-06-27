@@ -38,12 +38,23 @@ const Designs = () => {
             <h2 className="text-lg font-medium  mb-3 text-center">
               Google Drive UI Redesign with Neumorphism
             </h2>
-
-            <motion.img
-              src="https://i.ibb.co/yBbDNRr/driveredesign.png"
-              alt="Google Drive UI Redesign"
-              className="w-full rounded-lg shadow-lg "
-            />
+            <div className="relative w-full">
+              <a
+                href="https://www.figma.com/community/file/1406357600679855634/google-drive-neumorphism-design"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <motion.img
+                  src="https://i.ibb.co/yBbDNRr/driveredesign.png"
+                  alt="Google Drive UI Redesign"
+                  className="w-full rounded-lg shadow-lg"
+                />
+                {/* Overlay */}
+                <div className="absolute top-2 right-2 bg-black/70 text-white text-xs md:text-sm px-3 py-1 rounded-full backdrop-blur-sm shadow-md">
+                  500+ users on Figma
+                </div>
+              </a>
+            </div>
           </div>
 
           {/* Block 2: Instagram Carousel Designs */}
